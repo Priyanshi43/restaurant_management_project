@@ -1,2 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff6347;
+        }
+        .hero {
+            background-color: #ffe5d4;
+            padding: 50px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            width: 250px;
+            margin: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        .card p {
+            padding: 0 10px;
+            color: #555;
+        }
+        .card button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+        }
+        .card button:hover {
+            background-color: #e5533d;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Restaurant</h1>
+        <p>Delicious food, served with love</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to Our Restaurant</h1>
+        <p>Fresh, tasty, and made just for you</p>
+    </section>
+
+    <section class="menu">
+        <div class="card">
+            <img src="https://source.unsplash.com/400x300/?pizza" alt="Pizza">
+            <h3>Cheese Pizza</h3>
+            <p>Hot and cheesy pizza with fresh toppings.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/400x300/?burger" alt="Burger">
+            <h3>Beef Burger</h3>
+            <p>Juicy burger with fresh lettuce and cheese.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/400x300/?pasta" alt="Pasta">
+            <h3>Creamy Pasta</h3>
+            <p>Rich and creamy pasta with fresh herbs.</p>
+            <button>Order Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Restaurant. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
